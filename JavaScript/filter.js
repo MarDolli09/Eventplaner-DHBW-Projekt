@@ -1,0 +1,1 @@
+/* JavaScript-Datei für die Filterfunktionen */
