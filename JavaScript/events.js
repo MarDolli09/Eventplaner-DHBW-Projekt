@@ -1,0 +1,1 @@
+// Diese Datei ist verantwortlich für die Anzeige der Events und deren Speicherung im System.
