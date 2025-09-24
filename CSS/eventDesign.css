@@ -1,0 +1,32 @@
+header {
+background-color:#fff;
+border-bottom: 1px solid #e0e0e0;
+padding: 12px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header #logo {
+    display: flex;
+    align-items:center;
+    gap: 8px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header #logo img {
+    height: 48px;
+    width: 48px;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+
+header nav a: hover {
+    text-decoration: underline;
+}
