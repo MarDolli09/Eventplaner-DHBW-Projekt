@@ -1,6 +1,10 @@
+const form = document.querySelector('form');
 const titleInput = form.querySelector('input[type="text"]');
 const dateInput = form.querySelector('input[type="date"]');
 const descInput = form.querySelector('textarea');
+const sortselect = document.getElementById('sortSelect');
+const searchInput = document.querySelector(".controls input[type=text]");
+const eventsContainer = document.querySelector('section.card:last-of-type');
 
 let events = [];
 
@@ -15,8 +19,12 @@ form.addEventListener('submit', e => {
 
     events.push({title, date, description});
     form.reset();
+    showEvents();
 });
 
+function showEvents() {
+
+}
 //Beispiel-Daten aus der Vorlage ins Array einfügen
 events = [
     {title: 'Rock am Ring', date: '2025-06-06', description: 'Eines der größten Rock-Festivals in Deutschland mit internationalen Bands.'},
