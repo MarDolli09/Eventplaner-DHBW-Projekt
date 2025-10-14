@@ -1,1 +1,0 @@
-// Diese Datei enthält die Logik zur Filterung der Events basierend auf den ausgewählten Kriterien.
