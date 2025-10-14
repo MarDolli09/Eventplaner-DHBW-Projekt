@@ -23,9 +23,14 @@ form.addEventListener('submit', e => {
 });
 
 function showEvents() {
+    //filtering the array based on input of search field
+    let filtered =events.filter(event => {
+        event.title.toLowerCase().includes(searchInput.value.toLowerCase()) ||
+        event.description.toLowerCase().includes(searchInput.value.toLowerCase())
+    })
 
 }
-//Beispiel-Daten aus der Vorlage ins Array einfügen
+//putting example events into array
 events = [
     {title: 'Rock am Ring', date: '2025-06-06', description: 'Eines der größten Rock-Festivals in Deutschland mit internationalen Bands.'},
     {title: 'Hurricane Festival', date: '2025-06-20', description: 'Open-Air Festival mit Rock, Indie und Pop im Norden Deutschlands.'},
