@@ -1,1 +1,1 @@
-/* JavaScript-Datei für die Filterfunktionen */
+// Diese Datei enthält die Logik zur Filterung der Events basierend auf den ausgewählten Kriterien.
