@@ -73,6 +73,9 @@ form input, form select, form textarea{
     resize: none;
 }
 
+form textarea {
+    height: 100px;
+}
 form button {
     width: 100%;
     background-color: #111;
@@ -111,4 +114,14 @@ footer {
     font-size: 13px;
     border-top: 1px solid #e0e0e0;
     margin-top: 30px;
+}
+
+
+.event-item h3 {
+    font-size: 16px;
+    margin: 0 0 4px;
+}
+
+.event-item .meta {
+    font-weight: bold;
 }
