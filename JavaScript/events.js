@@ -41,6 +41,21 @@ function showEvents() {
                 : b.title.localeCompare(a.title, "de")
         );
     }
+
+    //remove the old events from the container
+    eventsContainer.querySelectorAll('.event-item').forEach(event => event.remove());
+
+    //create the html div-elements for the events and add them to the eventsContainer
+    filtered.forEach(event => {
+        const div = document.createElement("div");
+        div.className = "event-item";
+        div.innerHTML = `
+      <h3>${event.title}</h3>
+      <div class="meta">Datum: ${new Date(event.date).toLocaleDateString("de-DE")}</div>
+      <p>${event.desc}</p>
+    `;
+        eventsContainer.appendChild(div);
+    });
 }
 //putting example events into array
 events = [
