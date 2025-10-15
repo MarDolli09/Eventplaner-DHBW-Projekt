@@ -28,7 +28,19 @@ function showEvents() {
         event.title.toLowerCase().includes(searchInput.value.toLowerCase()) ||
         event.description.toLowerCase().includes(searchInput.value.toLowerCase())
     })
-
+    //sort events by date (ascending/descending) or by title (A–Z / Z–A) based on the selection in the dropdown menu
+    if (sortSelect.value.includes("Datum")) {
+        filtered.sort((a, b) => new Date(a.date) - new Date(b.date));
+        if (sortSelect.value.includes("absteigend")) {
+            filtered.reverse();
+        }
+    } else {
+        filtered.sort((a, b) =>
+            sortSelect.value.includes("A–Z")
+                ? a.title.localeCompare(b.title, "de")
+                : b.title.localeCompare(a.title, "de")
+        );
+    }
 }
 //putting example events into array
 events = [
