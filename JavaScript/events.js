@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const titleInput = form.querySelector('input[type="text"]');
 const dateInput = form.querySelector('input[type="date"]');
 const descInput = form.querySelector('textarea');
-const sortselect = document.getElementById('sortSelect');
+const sortSelect = document.getElementById('sortSelect');
 const searchInput = document.querySelector(".controls input[type=text]");
 const eventsContainer = document.querySelector('section.card:last-of-type');
 
@@ -65,3 +65,9 @@ events = [
     {title: 'Tomorrowland', date: '2025-07-18', description: 'Legendäres EDM-Festival in Belgien mit spektakulären Bühnen und DJs.'},
     {title: 'Lollapalooza Berlin', date: '2025-09-06', description: 'Vielfältiges Musikfestival mit Pop, Rock, Hip-Hop und EDM.'}
 ];
+
+//eventlisteners for the search and sort fields
+sortSelect.addEventListener("change", renderEvents);
+searchInput.addEventListener("input", renderEvents);
+
+showEvents();
