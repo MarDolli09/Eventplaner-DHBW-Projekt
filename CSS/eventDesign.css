@@ -62,7 +62,7 @@ main {
     font-size: 18px;
 }
 
-form input, form select{
+form input, form select, form textarea{
     width: 100%;
     padding: 10px;
     margin-top: 8px;
@@ -70,8 +70,12 @@ form input, form select{
     border-radius: 6px;
     font-size: 14px;
     box-sizing: border-box;
+    resize: none;
 }
 
+form textarea {
+    height: 100px;
+}
 form button {
     width: 100%;
     background-color: #111;
@@ -110,4 +114,14 @@ footer {
     font-size: 13px;
     border-top: 1px solid #e0e0e0;
     margin-top: 30px;
+}
+
+
+.event-item h3 {
+    font-size: 16px;
+    margin: 0 0 4px;
+}
+
+.event-item .meta {
+    font-weight: bold;
 }

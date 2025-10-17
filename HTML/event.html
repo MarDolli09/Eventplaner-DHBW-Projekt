@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Event Planer</title>
-    <link rel = "stylesheet" href="../CSS/eventDesign.css">
-    <meta name="description" content="Der beste Event Planer">
+    <link rel="stylesheet" href="../CSS/eventDesign.css">
 </head>
 <body>
 <header>
     <div id="logo">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzgWqDbezDvkIvcdAclotFS0M-EHwqRau73GL-zHJnXDnmn2aALG7Gibgh7QBkFP0j9Kg&usqp=CAU" alt="logo">
-        <span>
-            Event Planer
-        </span>
+        <span>Event Planer</span>
     </div>
     <nav>
         <a href="#">Start</a>
         <a href="#">Kontakt</a>
     </nav>
 </header>
+
 <main>
     <section class="SectionBox">
-    <h2>Neues Event erstellen</h2>
+        <h2>Neues Event erstellen</h2>
         <form>
             <input type="text" placeholder="Titel" required>
             <input type="date" placeholder="tt.mm.jjjj" required>
-            <textarea type="text" placeholder="Beschreibung" required></textarea>
+            <textarea placeholder="Beschreibung" required></textarea>
             <button type="submit">Hinzufügen</button>
         </form>
     </section>
 
-    <section class="SectionBox">
-        <div id="EventsList">
+    <!-- Filter- und Suchbereich -->
+    <section class="SectionBox card">
+        <div class="controls" id="EventsList">
             <label for="sortSelect">Sortieren nach:</label>
             <select id="sortSelect">
                 <option>Datum aufsteigend</option>
                 <option>Datum absteigend</option>
-                <option>Titel A-Z</option>
-                <option>Titel Z-A</option>
+                <option>Titel A–Z</option>
+                <option>Titel Z–A</option>
             </select>
             <input type="text" placeholder="Suchen...">
         </div>
@@ -48,5 +47,7 @@
 <footer>
     © 2025 Event Planer
 </footer>
+
+<script src="../JavaScript/events.js"></script>
 </body>
 </html>
