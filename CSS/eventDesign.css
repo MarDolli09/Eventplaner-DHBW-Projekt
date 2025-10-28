@@ -119,12 +119,12 @@ footer {
 
 .event-item h3 {
     font-size: 20x;
-     font-weight: 800;
+     font-weight: bold;
     margin: 0 0 4px;
 }
 
 .event-item .meta { /* Titel Design in der Liste unten */
-    font-weight: 800;
+    font-weight: bold;
     font-size: 16px;
 }
 
