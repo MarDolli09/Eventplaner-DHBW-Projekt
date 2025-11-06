@@ -1,3 +1,5 @@
+/* 3. Gruppe (Nils Brehm, Sebastian Juchemich, Jannis Karl, Marius Dollinger) */
+
 const form = document.querySelector('form');
 const titleInput = form.querySelector('input[type="text"]');
 const dateInput = form.querySelector('input[type="date"]');
